@@ -8,7 +8,7 @@ export default function Dashboard(){
     const [balance,setBalance] = useState(0);
 
     useEffect(() => {
-        axios.get("https://paywise-backend-4.onrender.com/api/v1/account/balance",{
+        axios.get("http://localhost:3000/api/v1/account/balance",{
             headers: {
                 Authorization: "Bearer " + localStorage.getItem("token"),
             }

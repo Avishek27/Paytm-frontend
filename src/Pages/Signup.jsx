@@ -32,7 +32,7 @@ export default function Signup(){
             setPassword(e.target.value);
         }} heading = {"Password"} label = {"1234"}/>
         <Button onClick = {async ()=>{
-               const response = await axios.post("https://paywise-backend-4.onrender.com/signup",{
+               const response = await axios.post("https://paywise-backend-4.onrender.com/api/v1/user/signup",{
                     username,
                     firstName,
                     lastName,
